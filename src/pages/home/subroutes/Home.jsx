@@ -3,6 +3,7 @@ import Navbar from "../../../components/navbar/navbar";
 import firstbox from "./../../../assets/firstbox.svg";
 import secondbox from "./../../../assets/secondbox.svg";
 import thirdbox from "./../../../assets/thirdbox.svg";
+import Trendingcourses from "../../../components/trending-courses";
 
 function HomePage() {
     return (
@@ -28,6 +29,7 @@ function HomePage() {
                     </div>
                 </section>
             </section>               
+        <Trendingcourses/>    
         </>
     );
 }
