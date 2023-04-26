@@ -4,6 +4,9 @@ import firstbox from "./../../../assets/firstbox.svg";
 import secondbox from "./../../../assets/secondbox.svg";
 import thirdbox from "./../../../assets/thirdbox.svg";
 import Trendingcourses from "../../../components/trending-courses";
+import Newskill from "../../../components/New-skill";
+import Homesection3 from "../../../components/homesection3";
+import Footer from "../../../components/footer";
 
 function HomePage() {
     return (
@@ -29,7 +32,11 @@ function HomePage() {
                     </div>
                 </section>
             </section>               
-        <Trendingcourses/>    
+        <Trendingcourses/> 
+        <Newskill/>
+        <Homesection3/>  
+        <Trendingcourses/>
+        <Footer/>  
         </>
     );
 }
