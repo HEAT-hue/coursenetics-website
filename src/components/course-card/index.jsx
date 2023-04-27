@@ -4,7 +4,7 @@ import moyo from './../../assets/react.svg'
 
 function Coursecard({courseName, courseTitle, courseLevel}) {
   return (
-    <div className='flex items-center gap-6 border border-1 p-6 mt-5 rounded border-pry'>
+    <div className='md:flex text-left items-center gap-6 border border-1 p-6 mt-5 rounded border-pry'>
       <div className={`flex flex-col gap-3 bg-[url('${moyo}')]`}>
         <h2>{courseName}</h2>
         <button className='text-pry font-bold bg-white rounded-sm flex-end'>Start Now</button>

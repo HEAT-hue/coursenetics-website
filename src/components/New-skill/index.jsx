@@ -6,18 +6,14 @@ function Newskill() {
     // const [searchParams, setSearchParams] = useSearchParams({})
     const skills = ['Web Development', 'UX design', 'Virtual Assistant', 'Marketing and Sales', 'Copywriting' ]
    const [activeThumb, setActiveThumb]= useState('Web Development')
-   const courses =[
-    {name : 'Web Development'}
-   ]
-
-   
-
-
+//    const courses =[
+//     {name : 'Web Development'}
+//    ]
     
   return (
     <div className="p-3 md:p-16">
         <h1 className="text-pry text-3xl font-bold md:text-4xl mb-3">It's an Era to acquire a new skill</h1>
-        <nav className="flex justify-between">
+        <nav className="flex justify-between flex-wrap">
             {skills.map((item,idx)=> {
                 return (
                     <div key={idx} className="cursor-pointer" onClick={()=> setActiveThumb(item)}>

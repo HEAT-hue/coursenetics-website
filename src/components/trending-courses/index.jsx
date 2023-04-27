@@ -1,11 +1,14 @@
-import moyo from './../../assets/react.svg'
+import virtualimg from './../../assets/virtual.jpg'
+import webdev from './../../assets/webdev.jpg'
+import marketing from './../../assets/marketing.jpg'
+
 import lesson from './../../assets/lesson.svg'
 function Trendingcourses() {
 
 const courses = [
-  {name: 'Marketing and Sales', link: '/', number: '12', duration: '8', bg: moyo},
-  {name: 'Web Development', link: '/', number: '10', duration: '6', bg: moyo},
-  {name: 'Virtual Assistant', link: '/', number: '8', duration: '4' ,bg: moyo}
+  {name: 'Marketing and Sales', link: '/', number: '12', duration: '8', bg: marketing },
+  {name: 'Web Development', link: '/', number: '10', duration: '6', bg: webdev},
+  {name: 'Virtual Assistant', link: '/', number: '8', duration: '4' ,bg: virtualimg}
 ]
 
   return (
@@ -15,7 +18,7 @@ const courses = [
         {courses.map((item, idx)=> {
           return (
           <section key={idx} >
-            <div className={`py-4 px-8 bg-[url('${item.bg}')] bg-cover rounded-lg flex flex-col justify-between h-48 md:w-[365px] backdrop-brightness-50`}>
+            <div className={`py-4 px-8 bg-[url('${item.bg}')] bg-black rounded-lg flex flex-col justify-between h-48 md:w-[365px] }}`}>
              <h2 className="text-white font-bold text-2xl w-[179px]">{item.name}</h2>
              <button className="flex justify-self-end bg-white text-pry font-medium w-fit p-2 rounded">Enroll Now</button>
             </div>
